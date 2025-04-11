@@ -1,0 +1,86 @@
+/* Estilização da Seção de Equipe */
+#equipe {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da Seção */
+#equipe_cidrao .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e9a209;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo da Seção */
+#equipe_cidrao .section-subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container da Equipe */
+.equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+/* Item da Equipe */
+.equipe-item {
+    flex: 1 1 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    max-width: 300px; 
+}
+
+.equipe-item:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem da Equipe */
+.equipe-imagem {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Nome e Cargo da Equipe */
+.equipe-nome {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.equipe-role {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Descrição do Funcionário */
+.equipe-descricao {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+    text-align:unset; 
+    margin: 0;
+}

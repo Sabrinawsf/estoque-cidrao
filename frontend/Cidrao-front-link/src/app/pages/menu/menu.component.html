@@ -1,0 +1,246 @@
+<!-- menu.component.html -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Bolos Caseiros do Cidrão</title>
+</head>
+
+<header>
+    <div id="title">
+      <i class="fa-solid fa-cake-candles" id="nav_logo"></i>
+      <div>
+        <h1>Bolos Caseiros</h1>
+        <h1>do Cidrão</h1>
+      </div>
+    </div>
+    
+    <nav id="navcake">
+      <ul id="nav_list">
+        <li class="nav-item">
+          <a routerLink="/menuInicio">Início</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/menuCardapio">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/menuSobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/menuEquipe">Equipe</a>
+        </li>
+      </ul>
+          
+
+    </nav>
+
+  </header>
+  
+  <main id="content">
+    <!-- Seção Início -->
+    <section id="inicio"> 
+      <div class="shape"></div>
+      <div id="cta">
+        <h3 class="frase">
+          Sabores caseiros que tocam o
+          <span>Coração</span>
+        </h3>
+        <p class="description">
+          Experimente nossos deliciosos bolos, pães e biscoitos feitos com carinho e dedicação.
+        </p>
+
+        
+        <div id="cta_buttons">
+          <a routerLink="/insumos">
+            <button class="btn-default">Cadastro Insumos</button>
+          </a>
+          <a routerLink="/movimentacao">
+            <button class="btn-default">Lista de Insumos</button>
+          </a>
+        </div>
+                
+     
+      </div>
+      <article id="banner">
+        <img src="assets/images/logo.png" alt="Logo">
+      </article>
+    </section>
+  
+    <!-- Seção Menu/ Cardápio -->
+    <section id="menu">
+      <h2 class="section-title">Cardápio</h2>
+      <h2 class="section-subtitle">Nossos bolos caseiros</h2>
+      <div id="dishes">
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="assets/images/bolo-cenoura.png" class="bolo-cenoura" alt="Bolo de Cenoura">
+          <h3 class="bolo-cenoura-title">Bolo de Cenoura</h3>
+          <span class="bolo-description">
+            Um clássico irresistível, o bolo de cenoura combina a leveza e o sabor natural da cenoura com um toque de doce, criando uma sobremesa deliciosa e reconfortante.
+          </span>
+          <div class="bolo-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <div class="bolo-price">
+            <h4>R$28,00 - Grande</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Repita para os outros pratos -->
+        <!-- Exemplo para Bolo de Ameixa -->
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="assets/images/bolo-ameixa.png" class="bolo-ameixa" alt="Bolo de Ameixa">
+          <h3 class="bolo-ameixa-title">Bolo de Ameixa</h3>
+          <span class="bolo-description">
+            Um bolo delicioso e úmido, com a combinação perfeita entre a doçura e a leve acidez das ameixas, criando uma experiência única e saborosa.
+          </span>
+          <div class="bolo-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <div class="bolo-price">
+            <h4>R$28,00 - Grande</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="assets/images/bolo-chocolate.png" alt="Bolo de Chocolate" class="bolo-chocolate">
+          <h3 class="bolo-chocolate-title">Bolo de Chocolate</h3>
+          <span class="bolo-description">
+            Um clássico decadente, o bolo de chocolate é rico, macio e cheio do sabor intenso do cacau, uma verdadeira indulgência para os amantes de chocolate.
+          </span>
+          <div class="bolo-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <div class="bolo-price">
+            <h4>R$28,00 - Grande</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+        
+
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="assets/images/bolo-fuba.png" alt="Bolo de Fubá" class="bolo-fuba">
+          <h3 class="bolo-fuba-title">Bolo de Fubá</h3>
+          <span class="bolo-description">
+            O bolo de fubá é leve e macio, com um sabor sutil e acolhedor que remete às tradições caseiras, perfeito para acompanhar um café ou chá.
+          </span>
+          <div class="bolo-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <div class="bolo-price">
+            <h4>R$28,00 - Grande</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+        
+  
+        <!-- Continue para os demais bolos -->
+      </div>
+    </section>
+  
+    <!-- Seção Sobre -->
+    <section id="sobre">
+      <div id="sobre_historia">
+        <h2 class="section-title">Origem</h2>
+        <h4 class="section-subtitle">
+          Como surgiu a empresa de Bolos Caseiros do Cidrão
+        </h4>
+      </div>
+      <div class="sobre-content">
+        <div class="sobre-item">
+          <img src="assets/images/loja-cidrao.jpeg" class="sobre-imagem" alt="Fachada da loja Bolos Caseiros do Cidrão">
+        </div>
+        <p>
+          A história da "Bolos Caseiros do Cidrão" é uma verdadeira inspiração de como a paixão e o esforço podem transformar uma necessidade em um negócio bem-sucedido. Tudo começou quando Cidrão, em busca de uma fonte de renda para sustentar sua família, decidiu se dedicar ao mundo da confeitaria. Com a ajuda de sua esposa, Fabiana, que compartilhava seu entusiasmo por criar delícias caseiras, Cidrão aprendeu a arte de fazer bolos.
+
+          O início da jornada foi em casa, onde eles começaram a preparar bolos com amor e dedicação, utilizando receitas passadas de geração em geração. A chegada de Maria Alice trouxe ainda mais alegria e também um aumento na demanda pelos produtos feitos com tanto carinho. O sucesso das vendas caseiras motivou Cidrão e Fabiana a dar um passo maior: abrir uma loja dedicada à confeitaria.
+          
+          Com a nova loja, eles conseguiram oferecer um atendimento ainda mais personalizado e expandir sua capacidade de produção, mantendo a qualidade que havia conquistado a lealdade de seus clientes. Hoje, a "Bolos Caseiros do Cidrão" é um símbolo de cuidado e dedicação, conhecida por seus produtos frescos e saborosos que refletem o amor e a paixão que Cidrão e Fabiana colocam em cada receita. A confeitaria se tornou não apenas um negócio, mas uma verdadeira extensão da família, celebrando momentos especiais e oferecendo a todos a doçura de um trabalho feito com o coração.</p>
+        
+      </div>
+      <button class="btn-default">Saber mais sobre a história</button>
+    </section>
+  
+    <!-- Seção Equipe -->
+    <section id="equipe">
+      <div id="equipe_cidrao">
+        <h2 class="section-title">Nossa equipe</h2>
+        <h4 class="section-subtitle">Conheça quem faz o sabor acontecer!</h4>
+      </div>
+      <div class="equipe-container">
+        <div class="equipe-item">
+          <img src="assets/images/Confeiteiro-Cidrao.jpg" class="equipe-imagem" alt="Confeiteiro Cidrão">
+          <p class="equipe-nome">Cidrão</p>
+          <p class="equipe-role">Confeiteiro</p>
+          <p class="equipe-descricao">
+            O confeiteiro Cidrão é um personagem central no sucesso da empresa "Bolos Caseiros do Cidrão". Ele é um mestre na arte de confeitar e tem uma paixão genuína por criar delícias caseiras que conquistam o paladar dos clientes. Com anos de experiência, Cidrão é conhecido por sua habilidade em transformar ingredientes simples em bolos e doces sofisticados e saborosos.
+
+                        Além de ser o responsável pela produção dos bolos, Cidrão também faz vendas diretamente nas ruas, o que permite uma conexão pessoal com os clientes e uma compreensão mais íntima das suas preferências.
+          </p>
+        </div>
+        <div class="equipe-item">
+          <img src="assets/images/Ajudante-Fabi.jpg" class="equipe-imagem" alt="Ajudante Fabiana">
+          <p class="equipe-nome">Fabiana</p>
+          <p class="equipe-role">Ajudante</p>
+          <p class="equipe-descricao">
+            Fabiana é conhecida por sua precisão e dedicação no processo de preparação dos pães e biscoitos. Ela se destaca por sua habilidade em medir e misturar ingredientes, bem como por sua atenção aos detalhes durante o processo de fermentação e cocção. Sua experiência permite que ela ajuste as receitas conforme necessário, garantindo que cada produto seja de alta qualidade e tenha uma textura perfeita.
+          </p>
+        </div>
+        <div class="equipe-item">
+          <img src="assets/images/Aux-Sabrina.webp" class="equipe-imagem" alt="Auxiliar Sabrina">
+          <p class="equipe-nome">Sabrina</p>
+          <p class="equipe-role">Auxiliar</p>
+          <p class="equipe-descricao">
+            Sabrina desempenha um papel crucial na "Bolos Caseiros do Cidrão", cuidando da parte burocrática, administrativa e financeira da empresa. Sua função é essencial para garantir que as operações diárias sejam realizadas de maneira eficiente e em conformidade com as normas legais e financeiras.
+
+                        Sabrina é responsável por uma série de tarefas que incluem o gerenciamento de contas, controle de despesas e receitas, e a organização de documentos financeiros. Ela realiza a contabilidade da empresa, garantindo que todas as transações sejam registradas corretamente e que os relatórios financeiros sejam precisos.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    
+  
+
+

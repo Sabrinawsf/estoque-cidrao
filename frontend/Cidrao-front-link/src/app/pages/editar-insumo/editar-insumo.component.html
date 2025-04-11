@@ -1,0 +1,48 @@
+<header>
+    <div id="title">
+        <i class="fa-solid fa-cake-candles" id="nav_logo"></i>
+        <div>
+        <h1>Bolos Caseiros</h1>
+        <h1>do Cidrão</h1>
+        </div>
+    </div>
+  </header>
+
+
+<div class="editar-insumo">
+    <h2>Editar Insumo</h2>
+    <form [formGroup]="insumoForm" (ngSubmit)="atualizarInsumo()">
+      <div>
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" formControlName="nome">
+      </div>
+      <div>
+        <label for="descricao">Descrição:</label>
+        <input id="descricao" type="text" formControlName="descricao">
+      </div>
+      <div>
+        <label for="quantidade">Quantidade:</label>
+        <input id="quantidade" type="number" formControlName="quantidade">
+      </div>
+      <form [formGroup]="insumoForm" (ngSubmit)="atualizarInsumo()">
+        <!-- ...campos anteriores... -->
+        <div>
+          <label for="dataEntrada">Data de Entrada:</label>
+          <input id="dataEntrada" type="date" formControlName="dataEntrada">
+        </div>
+        <div>
+          <label for="dataValidade">Data de Validade:</label>
+          <input id="dataValidade" type="date" formControlName="dataValidade"> <!-- ✅ Corrigido -->
+        </div>
+        <div>
+          <label for="dataSaida">Data de Saída:</label>
+          <input id="dataSaida" type="date" formControlName="dataSaida">
+        </div>    
+        <div class="botoes">
+            <button type="submit">Atualizar</button>
+            <button type="button" (click)="router.navigate(['/movimentacao'])">Cancelar</button>
+          </div>
+        </form>
+  
+  
+  

@@ -1,0 +1,115 @@
+header{
+    width: 100%;
+    padding: 10px 2%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    align-items: center;
+    max-width: 100vw; /* Garante que não ultrapasse a largura da tela */
+    box-sizing: border-box; /* Evita que padding e bordas aumentem o tamanho */
+    margin: 0 auto; /* Centraliza caso necessário */
+    position: sticky;
+    top: 0;
+    background-color: #ffd66d;
+    z-index: 3;
+    margin-bottom: 60px;
+    }
+
+    header h1 {
+        color: #996c02;
+        margin: 0; /* Remove margens padrão */
+        line-height: 1; /* Diminui o espaçamento vertical */
+      }
+    
+      
+    #navcake {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1; 
+      }
+      
+      #title {
+        color: #996c02;
+        display: flex;
+        align-items: center;
+        gap: 15px; 
+        line-height: 50px;
+      }
+  
+      #nav_logo {
+        font-size: 3em; 
+        color: white; 
+      }
+
+
+
+/* Container principal para o formulário de edição */
+.editar-insumo {
+    max-width: 600px;           /* Largura máxima desejada */
+    margin: 20px auto;          /* Centraliza horizontalmente e adiciona margem superior/inferior */
+    padding: 20px;
+    background-color: #fff;     /* Fundo branco */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título do formulário */
+  .editar-insumo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #996c02;             /* Cor secundária (exemplo) */
+  }
+  
+  /* Cada campo do formulário fica em um bloco */
+  .editar-insumo form > div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo para os labels */
+  .editar-insumo form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1d1d1d;
+  }
+  
+  /* Estilo para os inputs */
+  .editar-insumo form input {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .botoes {
+    display: flex;
+    justify-content: center;  /* Botões no centro */
+    gap: 10px;                /* Espaço entre eles */
+    margin-top: 20px;
+  }
+  
+  .botoes button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Botão Atualizar */
+  .botoes button[type="submit"] {
+    background-color: #996c02;
+    color: white;
+  }
+  
+  /* Botão Cancelar */
+  .botoes button[type="button"] {
+    background-color: #ffe100;
+    color: #1d1d1d;
+  }
+  
+  .botoes button:hover {
+    opacity: 0.9;
+  }

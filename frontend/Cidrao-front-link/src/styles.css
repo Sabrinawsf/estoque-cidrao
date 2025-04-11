@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(219,205,173) !important;
+}
+
+.custom-snackbar {
+    background-color:  #ffd66d; /* Cor de fundo desejada, por exemplo, um vermelho claro */
+    color: #996c02;            /* Cor do texto, se desejar também personalizar */
+  }
+  

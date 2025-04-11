@@ -1,0 +1,157 @@
+header{
+    width: 100%;
+    padding: 10px 2%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    align-items: center;
+    max-width: 100vw; /* Garante que não ultrapasse a largura da tela */
+    box-sizing: border-box; /* Evita que padding e bordas aumentem o tamanho */
+    margin: 0 auto; /* Centraliza caso necessário */
+    position: sticky;
+    top: 0;
+    background-color: #ffd66d;
+    z-index: 3;
+    margin-bottom: 60px;
+    }
+    
+    header h1 {
+      color: #996c02;
+      margin: 0; /* Remove margens padrão */
+      line-height: 1; /* Diminui o espaçamento vertical */
+    }
+
+    #navcake {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-grow: 1; 
+    }
+    
+    #title {
+      color: #996c02;
+      display: flex;
+      align-items: center;
+      gap: 15px; 
+      line-height: 50px;
+    }
+
+    #nav_logo {
+      font-size: 3em; 
+      color: white; 
+    }
+
+ 
+    
+  
+    
+  
+  ----------------------------------
+  
+  /*.title {
+    text-align: center;
+    margin-top: 60px; 
+    margin-bottom: 20px;
+    padding: 10px 0;
+    } */
+  
+ /* ====== Reset e estilos de base (pode adaptar ao seu projeto) ====== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffcb45; /* Cor de fundo da página */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ====== Box de Cadastro (o "quadrado" que agrupa tudo) ====== */
+.box-cadastro {
+  max-width: 1200px;         /* Largura máxima do box */
+  width: 90%;                /* Ajuste para responsividade */
+  background: #fff;          /* Fundo branco */
+  border-radius: 10px;       /* Cantos arredondados */
+  box-shadow: 0px 4px 6px rgba(153, 108, 2, 0.2);
+  margin: 70px auto;         /* Centraliza horizontalmente */
+  padding: 20px;
+
+  /* Exibe inputs e imagem lado a lado */
+  display: flex;             
+  justify-content: space-between; /* Espaço entre a coluna de inputs e a coluna da imagem */
+  align-items: flex-start;        /* Alinha ao topo */
+  gap: 50px;                      /* Espaço entre as colunas */
+}
+
+/* ====== Coluna da Esquerda (Inputs e Botão) ====== */
+.inputs-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;                /* Ajuste a largura da coluna conforme desejar */
+  gap: 15px;                 /* Espaçamento vertical entre os grupos de input */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group p {
+  font-weight: bold;
+  color: #996c02;
+  margin-bottom: 5px;
+}
+
+/* Inputs estilizados */
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ffcb45;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fffbea;
+}
+
+/* Botão de salvar */
+.inputs-left button {
+  align-self: center;
+  background-color: #e9a209;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 80%;
+  margin-top: 10px auto 0;
+  box-shadow: 0px 4px 6px rgba(153, 108, 2, 0.3);
+}
+
+.inputs-left button:hover {
+  background-color: #996c02;
+  transform: scale(1.05);
+}
+
+.inputs-left button:active {
+  transform: scale(0.95);
+  background-color: #ffcb45;
+}
+
+/* ====== Coluna da Direita (Imagem) ====== */
+.image-right {
+  width: 50%;               /* Ajuste conforme desejar o tamanho da imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-right img {
+  width: 100%;              /* A imagem ocupará toda a coluna */
+  max-width: 700px;         /* Se quiser limitar a largura */
+  height: auto;             /* Mantém a proporção */
+}

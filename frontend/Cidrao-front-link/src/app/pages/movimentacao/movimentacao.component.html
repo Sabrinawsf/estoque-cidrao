@@ -1,0 +1,49 @@
+<header>
+  <div id="title">
+      <i class="fa-solid fa-cake-candles" id="nav_logo"></i>
+      <div>
+        <h1>Bolos Caseiros</h1>
+        <h1>do Cidrão</h1>
+      </div>
+  </div>
+</header>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Quantidade</th>
+        <th>Data Entrada</th>
+        <th>Data Validade</th>
+        <th>Data Saída</th>
+        <!-- Coluna de ações -->
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let insumo of insumos">
+        <td>{{ insumo.nome }}</td>
+        <td>{{ insumo.descricao }}</td>
+        <td>{{ insumo.quantidade }}</td>
+        <td>{{ insumo.dataEntrada | date:'dd/MM/yyyy' }}</td>
+        <td>{{ insumo.dataValidade | date:'dd/MM/yyyy' }}</td>
+        <td>{{ insumo.dataSaida ? (insumo.dataSaida | date:'dd/MM/yyyy') : '-' }}</td>
+        
+        <td>
+          <div class="acoes">
+            <button (click)="editarInsumo(insumo)" class="btn-editar">Editar</button>
+            <button (click)="excluirInsumo(insumo.id)" class="btn-excluir">Excluir</button>
+          </div>
+        </td>       
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <article id="banner">
+      <img src="assets/images/logo.png" alt="Logo">        
+    </article>
+  </section>
+</div>

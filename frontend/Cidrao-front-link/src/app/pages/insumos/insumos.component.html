@@ -1,0 +1,60 @@
+<header>
+  <div id="title">
+      <i class="fa-solid fa-cake-candles" id="nav_logo"></i>
+      <div>
+      <h1>Bolos Caseiros</h1>
+      <h1>do Cidrão</h1>
+      </div>
+  </div>
+</header>
+
+
+
+<!-- Corpo principal (background) -->
+<body>
+  <div class="box-cadastro">
+    
+    <!-- Coluna da esquerda: inputs e botão -->
+    <div class="inputs-left">
+      <div class="input-group">
+        <p>Nome</p>
+        <input type="text" [(ngModel)]="nome">
+      </div>
+      
+      <div class="input-group">
+        <p>Descrição</p>
+        <input type="text" [(ngModel)]="descricao">
+      </div>
+
+      <div class="input-group">
+        <p>Quantidade</p>
+        <input type="number" [(ngModel)]="quantidade">
+      </div>
+
+      <div class="input-group">
+        <p>Data Entrada</p>
+        <input type="date" [(ngModel)]="dataEntrada">
+      </div>
+
+      <div class="input-group">
+        <p>Data Validade</p>
+        <input type="date" [(ngModel)]="dataValidade">
+      </div>
+    
+      <button (click)="montarBody()">SALVAR</button>
+    </div>
+    
+    <!-- Coluna da direita: imagem maior -->
+    <div class="image-right">
+      <img src="assets/images/logo.png" alt="Logo">
+    </div>
+
+  </div>
+</body>
+
+
+
+
+
+
+
