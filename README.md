@@ -4,7 +4,7 @@ Este projeto é uma aplicação web para controle de insumos em estoque, utiliza
 
 ---
 
-## 🔧 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Java 17
 - Spring Boot 3.4.4
@@ -14,7 +14,7 @@ Este projeto é uma aplicação web para controle de insumos em estoque, utiliza
 
 ---
 
-## ▶️ Como Rodar o Projeto
+##  Como Rodar o Projeto
 
 # Como Acessar e Executar o Projeto
 
